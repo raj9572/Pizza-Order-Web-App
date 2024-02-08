@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "pizza backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "data:import": "node seeder.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \" npm run server\" \" npm run client \" "
+  },
+  "keywords": [],
+  "author": "techinfo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0",
+    "stripe": "^12.17.0",
+    "uuid": "^9.0.0"
+  }
+}
